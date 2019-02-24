@@ -2,10 +2,10 @@
 
 This repository presents our approach to the problem in the [National Data Science Challenge 2019](https://careers.shopee.sg/ndsc/), organized by [Shopee](https://shopee.com/). We are a team of 4 undergraduate students from the [National University of Singapore](http://www.nus.edu.sg/), comprising of
 
-- Niu Yunpeng
-- Jiang Chunhui
-- Jin Shuyuan
-- He Yingxu
+- [Niu Yunpeng](http://github.com/yunpengn)
+- [Jiang Chunhui](https://github.com/Adoby7)
+- [Jin Shuyuan](https://github.com/CoderStellaJ)
+- [He Yingxu](https://github.com/YingxuH)
 
 ## Problem Description
 
