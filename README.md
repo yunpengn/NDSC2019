@@ -4,7 +4,7 @@ This repository presents our approach to the problem in the [National Data Scien
 
 - Niu Yunpeng
 - Jiang Chunhui
-- Jing Shuyuan
+- Jin Shuyuan
 - He Yingxu
 
 ## Problem Description
