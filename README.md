@@ -26,6 +26,8 @@ brew cask install pycharm
 - Setup this project in PyCharm:
     - Make the `data` folder as _"excluded"_.
 - Download `category.json`, `train.csv` and `test.csv` and move them to the `data` folder.
+- To activate this project's virtualenv, run `pipenv shell`.
+- To run a command inside the virtualenv, use `pipenv run python3 XXXX.py`.
 
 ## Licence
 
