@@ -105,3 +105,10 @@ venv.bak/
 
 # PyCharm project settings
 .idea/
+
+# Dataset files
+data/*.csv
+data/*.json
+
+# MacOS specific files
+.DS_Store

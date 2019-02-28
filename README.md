@@ -23,7 +23,9 @@ brew cask install pycharm
 ```
 - Clone this repository by `git clone git@github.com:yunpengn/NDSC2019.git`
 - Install the required dependencies by `pipenv install`
-- Setup this project in PyCharm
+- Setup this project in PyCharm:
+    - Make the `data` folder as _"excluded"_.
+- Download `category.json`, `train.csv` and `test.csv` and move them to the `data` folder.
 
 ## Licence
 
