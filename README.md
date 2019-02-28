@@ -13,6 +13,18 @@ There are hundreds of thousands new products added to Shopee every day. To make 
 
 For the beginner category, we would focus on **Product Category Classification**. Participants are required to determine the category of a product given its image and title. Performance will be evaluated based on the accuracy of the classification results. More information can be found at the Kaggle competition page at [here](https://www.kaggle.com/c/ndsc-beginner).
 
+## Setup Instructions
+
+- Make sure you have installed [Python](https://www.python.org) 3.7.2, [pipenv](https://github.com/pypa/pipenv) and the best IDE [PyCharm](https://www.jetbrains.com/pycharm/). Otherwise, use the command below (applicable to MacOS only, assuming you have [Homebrew](https://brew.sh) installed already):
+```bash
+brew install python3
+brew install pipenv
+brew cask install pycharm
+```
+- Clone this repository by `git clone git@github.com:yunpengn/NDSC2019.git`
+- Install the required dependencies by `pipenv install`
+- Setup this project in PyCharm
+
 ## Licence
 
 [GNU General Public Licence 3.0](LICENSE)
