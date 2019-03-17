@@ -2,10 +2,10 @@ from .network import Cnn
 import tqdm
 import torch.nn as nn
 import torch.optim as optimizer
+from .parameters import *
 
-model = Cnn(100)
-num_epochs = 2
-opt = optimizer.Adam(model.parameters(), lr=1e-2)
+model = Cnn(hidden_dim)
+opt = optimizer.Adam(model.parameters(), lr=learning_rate)
 loss_func = nn.BCEWithLogitsLoss()
 
 
