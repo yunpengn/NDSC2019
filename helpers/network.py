@@ -25,9 +25,9 @@ class Cnn_title(nn.Module):
         return self.predictor(feature)
 
 
-class Cnn_train(nn.Module):
+class Cnn_image(nn.Module):
     def __init__(self):
-        super(Cnn_train, self).__init__()
+        super(Cnn_image, self).__init__()
         self.conv1 = nn.Conv2d(3, 6, 5)
         self.pool = nn.MaxPool2d(2, 2)
         self.conv2 = nn.Conv2d(6, 16, 5)
