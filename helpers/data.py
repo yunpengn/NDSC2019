@@ -9,7 +9,7 @@ label_field = data.Field(sequential=False, use_vocab=False)
 def read_categories():
     categories = {}
 
-    with open('../data/categories.json') as file:
+    with open('data/categories.json') as file:
         data = json.load(file)
         for category, ID in data["Mobile"].items():
             categories[category] = ID
@@ -21,7 +21,7 @@ def read_categories():
     return categories
 
 
-def read_dataset(file_path):
+def read_train_dataset():
     # Declares the fields in the csv file.
     train_fields = [
         ("itemid", None),
@@ -31,4 +31,10 @@ def read_dataset(file_path):
     ]
 
     # Reads the csv file as a dataset.
-    return data.TabularDataset(path=file_path, format="csv", skip_header=True, fields=train_fields)
+    return data.TabularDataset.splits(
+        path="data",
+        train="train.csv",
+        validation="validate.csv",
+        format="csv",
+        skip_header=True,
+        fields=train_fields)

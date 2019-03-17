@@ -1,5 +1,4 @@
 import torch.nn as nn
-from src.data import text_field
 
 
 # Defines CNN topology
