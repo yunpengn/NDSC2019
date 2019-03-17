@@ -2,6 +2,7 @@ from sys import exit
 from time import ctime
 from src.data import read_dataset, read_categories, text_field
 from src.batch import BatchWrapper
+from src.train import train
 import torchtext.data as data
 
 
@@ -22,6 +23,7 @@ print("Finished loading the training dataset at", ctime(), "...\n")
 
 print("Begin to build the vocabulary map at", ctime(), "...")
 text_field.build_vocab(train_dataset)
+print(len(text_field.vocab))
 print("Finished building the vocabulary map at", ctime(), "...\n")
 
 print("Begin to build an iterator at", ctime(), "...")
@@ -37,4 +39,5 @@ train_loader = BatchWrapper(train_iter, "title", ["Category"])
 print("Finished building an iterator at", ctime(), "...")
 
 print("Begin to train the model at", ctime(), "...")
+train(data_loader=train_loader)
 print("Finished training the model at", ctime(), "...")

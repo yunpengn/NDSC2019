@@ -3,7 +3,7 @@ import tqdm
 import torch.nn as nn
 import torch.optim as optimizer
 
-model = Cnn()
+model = Cnn(100)
 num_epochs = 2
 opt = optimizer.Adam(model.parameters(), lr=1e-2)
 loss_func = nn.BCEWithLogitsLoss()
@@ -22,7 +22,8 @@ def train(data_loader):
             loss.backward()
             opt.step()
 
-            running_loss += loss.data[0] * x.size(0)
+            # Updates the running loss.
+            running_loss += loss.data * x.size(0)
 
         # Calculates the overall cost for this epoch.
         epoch_loss = running_loss / len(data_loader)
