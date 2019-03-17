@@ -16,5 +16,5 @@ def read_categories():
     return categories
 
 
-categories = read_categories()
-print(categories)
+all_categories = read_categories()
+print(all_categories)
