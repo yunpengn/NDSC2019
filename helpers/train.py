@@ -1,10 +1,10 @@
-from .network import Cnn
+from .network import Cnn_title
 import tqdm
 import torch.nn as nn
 import torch.optim as optimizer
 from .parameters import *
 
-model = Cnn(hidden_dim)
+model = Cnn_title(hidden_dim)
 opt = optimizer.Adam(model.parameters(), lr=learning_rate)
 loss_func = nn.BCEWithLogitsLoss()
 
