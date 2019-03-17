@@ -4,7 +4,7 @@ import torch.nn as nn
 # Defines CNN topology
 class Cnn(nn.Module):
     def __init__(self, hidden_dim, emb_dim=300, num_linear=1):
-        super().__init__()
+        super(Cnn).__init__()
         self.embedding = nn.Embedding(84503, emb_dim)
         self.encoder = nn.LSTM(emb_dim, hidden_dim, num_layers=1)
         self.linear_layers = []
