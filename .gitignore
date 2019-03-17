@@ -112,3 +112,4 @@ data/*.json
 
 # MacOS specific files
 .DS_Store
+*.joblib
