@@ -33,11 +33,9 @@ brew cask install pycharm
 
 - Download data online and put train.csv and test.csv into data folder
 
-- Create image training set folder and title training set folder in data
-
 - Run single script/process_validation.py
 
-This will seperate data in train.csv into train and validation sets. actual_train.csv and validate.csv are generated in data folder.
+This will seperate training data into train and validation sets. actual_train.csv and validate.csv are generated in data folder.
 
 - Run image_preprocessing.ipynb in data folder
 
