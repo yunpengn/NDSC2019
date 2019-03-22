@@ -29,6 +29,20 @@ brew cask install pycharm
 - To activate this project's virtualenv, run `pipenv shell`.
 - To run a command inside the virtualenv, use `pipenv run python3 XXXX.py`.
 
+## Data Preprocessing
+
+- Download data online and put train.csv and test.csv into data folder
+
+- Create image training set folder and title training set folder in data
+
+- Run single script/process_validation.py
+
+This will seperate data in train.csv into train and validation sets. actual_train.csv and validate.csv are generated in data folder.
+
+- Run image_preprocessing.ipynb in data folder
+
+This will divide data in actual_train.csv into different categories and create subfolders in image training set folder and title training set folder
+
 ## Licence
 
 [GNU General Public Licence 3.0](LICENSE)
